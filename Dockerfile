@@ -8,13 +8,12 @@ RUN apk update && \
 
 RUN pip install pymongo
 
-ENV LOG_LEVEL INFO
+ENV LOG_LEVEL DEBUG
 
 WORKDIR /app
 
 COPY . .
 
 RUN git config --global user.email "reachanirban95@gmail.com"
-RUN git add .
 
 CMD [ "python", "" ]
