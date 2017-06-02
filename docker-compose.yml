@@ -10,5 +10,5 @@ services:
    - .:/app
    extra_hosts:
    - "db.mongodb.priceboard.in:172.17.0.1"
-   command: sh -c 'ls && git add . && git commit -m "data stored again" && git push origin master'
+   command: sh -c 'ls -l && git add . && git commit -m "data stored again" && git push origin master'
 
