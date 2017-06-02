@@ -17,4 +17,4 @@ COPY . .
 RUN git config --global user.email "reachanirban95@gmail.com"
 RUN git add .
 
-CMD [ "python", "post-commit.py" ]
+CMD [ "python", "" ]

@@ -9,4 +9,4 @@ services:
    - .:/app
    extra_hosts:
    - "db.mongodb.priceboard.in:172.17.0.1"
-   command: git commit -m "success message"
+   command: git commit -m "changed docker file"
