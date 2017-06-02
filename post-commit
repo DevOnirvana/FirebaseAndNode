@@ -1,5 +1,5 @@
 !/usr/bin/env python
- 
+import subprocess as sp
 '''
 from pymongo import MongoClient
 
@@ -9,6 +9,7 @@ client = MongoClient('localhost:27017')
 log.info('Database Connected')
 db = client.commit-data
 '''
-echo look at me I am the post-commit script
-pwd
-git log -1 HEAD
+output = sp.check_output(['git log -1 --format="%H,%s"'],shell=True).decode(encoding='ascii')
+sha,msg = output.split(',')
+echo sha
+echa msg
