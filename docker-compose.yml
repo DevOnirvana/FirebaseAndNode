@@ -1,0 +1,12 @@
+version: '2'
+services:
+ firebase_and_node: 
+   build: .
+   container_name: firebase_and_node
+   environment:
+    - LOG_LEVEL=INFO
+   volumes:
+   - .:/app
+   extra_hosts:
+   - "db.mongodb.priceboard.in:172.17.0.1"
+   command: git commit -m "success message"
