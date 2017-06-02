@@ -16,4 +16,6 @@ COPY . .
 
 RUN git config --global user.email "reachanirban95@gmail.com"
 
+RUN which python
+
 CMD [ "python", "" ]
