@@ -11,5 +11,5 @@ db = client.commit-data
 '''
 output = sp.check_output(['git show -s --format="%H"'],shell=True) #.decode(encoding='ascii')
 # sha,msg = output.split(',')
-echo sha
+echo output
 # echa msg
