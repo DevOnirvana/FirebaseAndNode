@@ -3,7 +3,6 @@ services:
  store_commit_messages: 
    build: .
    container_name: store_commit_messages
-
    environment:
     - LOG_LEVEL=INFO
    volumes:
