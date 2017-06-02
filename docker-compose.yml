@@ -5,10 +5,10 @@ services:
    container_name: store_commit_messages
 
    environment:
-    - LOG_LEVEL=DEBUG
+    - LOG_LEVEL=INFO
    volumes:
    - .:/app
    extra_hosts:
    - "db.mongodb.priceboard.in:172.17.0.1"
-   command: sh -c 'ls -l && git add . && git commit -m "data stored again & again"'
+   command: sh -c 'git add . && git commit -m "success message stored"'
 

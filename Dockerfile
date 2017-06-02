@@ -8,7 +8,7 @@ RUN apk update && \
 
 RUN pip install pymongo
 
-ENV LOG_LEVEL DEBUG
+ENV LOG_LEVEL INFO
 
 WORKDIR /app
 
