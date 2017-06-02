@@ -9,7 +9,7 @@ client = MongoClient('localhost:27017')
 log.info('Database Connected')
 db = client.commit-data
 '''
-output = sp.check_output(['git show -s --format="%H"'],shell=True) #   .                decode(encoding='ascii')
+output = sp.check_output(['git sho  w -s --format="%H"'],shell=True) #   .           	       decode(encoding='ascii')
 # sha,msg = output.split(',')      
 echo output
 # echa msgdsdsdsd 
